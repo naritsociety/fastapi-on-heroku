@@ -14,6 +14,7 @@ post = {"author": "Mikey",
 
 posts = db.posts
 post_id = posts.insert_one(post).inserted_id
+
 print(post_id)
 
 @app.get("/")
@@ -21,5 +22,4 @@ def hello():
     return {
         "message": "Hello Heroku",
         "framework": "FastAPI",
-        "post_id": post_id
     }
