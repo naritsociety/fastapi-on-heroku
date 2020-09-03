@@ -5,4 +5,4 @@ app = FastAPI()
 
 @app.get("/")
 def hello():
-    return {"message": "Hello FastAPI"}
+    return {"message": "Hello Heroku"}
